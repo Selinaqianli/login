@@ -2,6 +2,7 @@
 ----
 Account will be locked out for 15 minutes after exceeding 5 consecutive unsuccessful login attempts to block brute-force attacks.
 
+[Core Code](https://github.com/Selinaqianli/login/blob/main/src/main/java/com/qianli/login/service/LoginServiceImpl.java)
 
 ***HTTP Requests***
 
@@ -67,7 +68,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
         * Description: <br /> Username/email or password is empty, return error message.
         * Image: ![](img/loginWhenBadRequest.png)
     * Response Code: 200
-        * Request Body: 
+        * Request Body:
       ```yaml
             {
               "email": "",
@@ -104,7 +105,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
       ```
         * Description: get all users for testing `/login`
         * Image: ![](img/getAllUsers.png)
-        
+
 ***Unit Tests***
 
 ![](img/unitTests.png)
