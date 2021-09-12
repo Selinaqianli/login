@@ -19,7 +19,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
       ```yaml
             "Your account has been locked. There are n minutes left to be unlocked."
       ```
-        * Description: <br /> The user has been locked, return error message the remaining time to be unlocked.
+        * Description: <br /> The user has been locked, return error message to show the remaining time to be unlocked.
         * Image: ![](img/loginWhenAccountLocked.png)
     * Response Code: 404
         * Request Body:
@@ -34,7 +34,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
       ```yaml
             "The username/email or password is not correct. You have x times attempts"
       ```
-        * Description: <br /> Username/email is correct, but the password is wrong, return error message to show how many attempts left.
+        * Description: <br /> Username/email is correct, but the password is wrong, while the account has not exceeding the maximal unsuccessful attempts, return error message to show how many attempts left.
         * Image: ![](img/loginWhenNotFound2.png)
     * Response Code: 404
         * Request Body:
