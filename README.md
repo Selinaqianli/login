@@ -32,7 +32,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
       ```
         * Response Body:
       ```yaml
-            "The username/email or password is not correct. You have x times attempts"
+            "The username/email or password is not correct. You have x attempts left."
       ```
         * Description: <br /> Username/email is correct, but the password is wrong, while the account has not exceeding the maximal unsuccessful attempts, return error message to show how many attempts left.
         * Image: ![](img/loginWhenNotFound2.png)

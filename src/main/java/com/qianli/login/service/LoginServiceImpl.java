@@ -68,7 +68,7 @@ public class LoginServiceImpl implements ILogin {
                 // the password is not correct, count the error
                 errorCount++;
                 redisTemplate.opsForValue().set(redisKey, errorCount, 15L, TimeUnit.MINUTES);
-                throw new IncorrectLoginCredentialException("Your username or password is not correct. You have " + (5-errorCount) + " times attempts.");
+                throw new IncorrectLoginCredentialException("Your username or password is not correct. You have " + (5-errorCount) + " attempts left.");
             }
         } catch (Exception e) {
             throw e;
