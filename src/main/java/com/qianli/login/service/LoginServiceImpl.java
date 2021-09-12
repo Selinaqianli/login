@@ -55,7 +55,7 @@ public class LoginServiceImpl implements ILogin {
             // check if the account is locked
             if (errorCount >= 5) {
                 Long expireTime = redisTemplate.getExpire(redisKey);
-                BigDecimal bigDecimal = new BigDecimal(expireTime/60).setScale(0, BigDecimal.ROUND_FLOOR);
+                BigDecimal bigDecimal = new BigDecimal(expireTime/60).setScale(0, BigDecimal.ROUND_CEILING);
                 throw new AccountLockedException("Your account has been locked. There are " + bigDecimal + " minutes left to be unlocked.");
             }
             

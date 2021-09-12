@@ -55,7 +55,7 @@ public class LoginTest {
     }
     
     // uncomment to manually test
-    /*@Test
+/*    @Test
     public void LoginWithWrongPassword() {
         try {
             User user = loginService.login("test2", "", "wrongpsw");
