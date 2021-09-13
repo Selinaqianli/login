@@ -21,7 +21,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
             "Your account has been locked. There are n minutes left to be unlocked."
       ```
         * Description: <br /> The user has been locked, return error message to show the remaining time to be unlocked.
-        * Image: ![](img/loginWhenAccountLocked.png)
+        * Image: <br /> ![](img/loginWhenAccountLocked.png)
     * Response Code: 404
         * Request Body:
       ```yaml
@@ -36,7 +36,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
             "The username/email or password is not correct. You have x attempts left."
       ```
         * Description: <br /> Username/email is correct, but the password is wrong, while the account has not exceeded the maximal unsuccessful attempts, return error message to show how many attempts left.
-        * Image: ![](img/loginWhenNotFound2.png)
+        * Image: <br /> ![](img/loginWhenNotFound2.png)
     * Response Code: 404
         * Request Body:
       ```yaml
@@ -51,7 +51,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
             "The username/email or password is not correct."
       ```
         * Description: <br /> User does not exist with given username/email, return error message.
-        * Image: ![](img/loginWhenNotFound1.png)
+        * Image: <br /> ![](img/loginWhenNotFound1.png)
     * Response Code: 400
         * Request Body:
       ```yaml
@@ -66,7 +66,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
             "The password cannot be empty"
       ```
         * Description: <br /> Username/email or password is empty, return error message.
-        * Image: ![](img/loginWhenBadRequest.png)
+        * Image: <br /> ![](img/loginWhenBadRequest.png)
     * Response Code: 200
         * Request Body:
       ```yaml
@@ -86,7 +86,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
             }
       ```
         * Description: <br /> Username/email and password are matched, return all data of the user.
-        * Image: ![](img/loginWhenOk.png)
+        * Image: <br /> ![](img/loginWhenOk.png)
 
 * ### `/get-all-users` ```GET```
     * Response Code: 200
@@ -104,7 +104,7 @@ Account will be locked out for 15 minutes after exceeding 5 consecutive unsucces
         ]
       ```
         * Description: get all users for testing `/login`
-        * Image: ![](img/getAllUsers.png)
+        * Image: <br /> ![](img/getAllUsers.png)
 
 ***Unit Tests***
 
